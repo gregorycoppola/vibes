@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 const SplashPage = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(1);
-  const TRANSITION_TIME = 1000; // 1 second in milliseconds
+  const TRANSITION_TIME = 2000; // 2 seconds in milliseconds
   const TOTAL_IMAGES = 4;
 
   useEffect(() => {
