@@ -32,13 +32,20 @@ const SplashPage = () => {
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
+      position: 'fixed',
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
     }}>
       <img 
         src={`/images/logo-image-sequence/${currentImageIndex}.jpg`}
         alt="Logo Animation"
         style={{
-          height: '100vh',
-          width: '100vw',
+          maxHeight: '100vh',
+          maxWidth: '100vw',
+          width: 'auto',
+          height: 'auto',
           objectFit: 'contain',
           opacity: isVisible ? 1 : 0,
           transition: `opacity ${FADE_DURATION}ms ease-in-out`,
